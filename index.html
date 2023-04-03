@@ -1,25 +1,61 @@
 <!DOCTYPE html>
 <html lang="en">
-<!-- Website에 대한 정보 -->
-<head>
+  <!-- Website에 대한 정보 -->
+  <head>
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Jake's Portfolio</title>
-    <!-- Metadata -->
-    <meta name="description" content="Protfolio for world-renowned enginner Jake" />
+    <!-- 
+        1. Metadata(description, author)
+        2. favicon
+        3. fonts(css: font-family: 'Open Sans', sans-serif;)
+        4. CSS
+        5. JS
+     -->
+    <meta
+      name="description"
+      content="Protfolio for world-renowned enginner Jake"
+    />
     <meta name="author" content="Jake" />
-    <!-- favicon -->
     <link rel="icon" type="image/png" href="imgs/01-favicon.png" />
-    <!-- icon -->
-    <script src="https://kit.fontawesome.com/9e732877fb.js" crossorigin="anonymous"></script>
-    <!-- fonts fonts-css: font-family: 'Open Sans', sans-serif; -->
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@600;700&display=swap" />
-    <!-- CSS -->
+    <script
+      src="https://kit.fontawesome.com/9e732877fb.js"
+      crossorigin="anonymous"
+    ></script>
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@600;700&display=swap"
+    />
     <link rel="stylesheet" href="style.css" />
-    <!-- JS -->
     <script src="main.js" defer></script>
-</head>
-<body>
-</body>
+  </head>
+  <body>
+    <!-- Navar -->
+    <nav id="navbar">
+      <div class="navbar__logo">
+        <img src="imgs/01-favicon.png" alt="branding logo" />
+        <a href="/">Jake</a>
+      </div>
+      <!-- ul.navbar__menu>li.navbar__menu__item*6 -->
+      <ul class="navbar__menu">
+        <li class="navbar__menu__item">Home</li>
+        <li class="navbar__menu__item">About</li>
+        <li class="navbar__menu__item">Skills</li>
+        <li class="navbar__menu__item">Work</li>
+        <li class="navbar__menu__item">Testimonials</li>
+        <li class="navbar__menu__item">Contact</li>
+      </ul>
+    </nav>
+    <!-- About -->
+    <section id="about"></section>
+    <!-- Skills -->
+    <section id="skills"></section>
+    <!-- Work -->
+    <section id="work"></section>
+    <!-- Testimonials -->
+    <section id="testimonials"></section>
+    <!-- Contact -->
+    <section id="contact"></section>
+  </body>
 </html>
