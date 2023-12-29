@@ -1,126 +1,37 @@
 <!DOCTYPE html>
 <html lang="en">
-  <!-- Website에 대한 정보 -->
-  <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Jake's Portfolio</title>
-    <!-- 
-        1. Metadata(description, author)
-        2. favicon
-        3. fonts(css: font-family: 'Open Sans', sans-serif;)
-        4. CSS
-        5. JS
-     -->
-    <meta
-      name="description"
-      content="Protfolio for world-renowned enginner Jake"
-    />
-    <meta name="author" content="Jake" />
-    <link rel="icon" type="image/png" href="imgs/01-favicon.png" />
-    <script
-      src="https://kit.fontawesome.com/9e732877fb.js"
-      crossorigin="anonymous"
-    ></script>
-    <link
-      rel="stylesheet"
-      href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@600;700&display=swap"
-    />
-    <link rel="stylesheet" href="style.css" />
-    <script src="main.js" defer></script>
-  </head>
-  <body>
-    <!-- Navar -->
-    <nav id="navbar">
-      <div class="navbar__logo">
-        <img src="imgs/01-favicon.png" alt="branding logo" />
-        <a href="/">Jake</a>
-      </div>
-      <!-- ul.navbar__menu>li.navbar__menu__item*6 -->
-      <ul class="navbar__menu">
-        <li class="navbar__menu__item">Home</li>
-        <li class="navbar__menu__item">About</li>
-        <li class="navbar__menu__item">Skills</li>
-        <li class="navbar__menu__item">Work</li>
-        <li class="navbar__menu__item">Testimonials</li>
-        <li class="navbar__menu__item">Contact</li>
-      </ul>
-    </nav>
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <!-- Home -->
-    <section id="home">
-      <img
-        src="imgs/03-profile.jpg"
-        alt="Jake's profile photo"
-        class="home__avatar"
-      />
-      <h1 class="home__title">Hello, <br />I'm Jake.</h1>
-      <h2 class="home__description">
-        A Software Engineer currently residing in Seoul, Korea
-      </h2>
-      <button class="home__contact">CONTACT ME</button>
-    </section>
+  <!-- SEO -->
+  <title>Jake&#39;s Atelier</title>
+  <meta name="description" content="Portfolio for world-renowned software engineer Jake"/>
+  <meta name="author" content="Jake"/>
+  <link rel="shortcut icon" href="images/favicon.png" type="image/x-icon">
 
-    <!-- About -->
-    <section id="about">
-      <h1>About me</h1>
-      <p>
-        I've been developing field of work over a year as an Back-end engineer.
-      </p>
-      <div class="about__majors">
-        <div class="major">
-          <div class="major__icon">
-            <i class="fa-brands fa-react"></i>
-            <i class="fa-brands fa-html5"></i>
-          </div>
-          <div class="major__title">Front-end</div>
-          <div class="major__description">
-            HTML, CSS, JavaScript,
-            <br />React, Web APIs
-          </div>
-        </div>
-        <div class="major">
-          <div class="major__icon">
-            <i class="fa-solid fa-server"></i>
-          </div>
-          <div class="major__title">Back-end</div>
-          <div class="major__description">
-            Java, JavaScript,
-            <br />Spring Boot, Rest APIs
-          </div>
-        </div>
-        <div class="major">
-          <div class="major__icon">
-            <i class="fa-solid fa-database"></i>
-          </div>
-          <div class="major__title">SQL</div>
-          <div class="major__description">Oracle DB, Maria DB, PostgresQL</div>
-        </div>
-      </div>
-      <div class="about__jobs">
-        <div class="job">
-          <img
-            src="imgs/jobs/logo_posco.png"
-            alt="posco dx"
-            class="job__logo"
-          />
-          <p class="job__name">전사 출입관리 통합 구축 프로젝트</p>
-          <p class="job__period">2022-04-26 ~ 2022-12-31</p>
-        </div>
-      </div>
-    </section>
+  <!-- OG(Open Graph Data) -->
+  <meta property="og:title" content="제이크의 포트폴리오"/>
+  <meta property="og:type" content="website"/>
+  <meta property="og:url" content="https://iamhoonpark.github.io/"/>
+  <meta property="og:image" content="배포 후 생성된 이미지 URL"/>
 
-    <!-- Skills -->
-    <section id="skills"></section>
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com"/>
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin/>
+  <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;500;600;700&display=swap" rel="stylesheet"/>
 
-    <!-- Work -->
-    <section id="work"></section>
+  <!-- Font Awesome -->
+  <script src="https://kit.fontawesome.com/9e732877fb.js" crossorigin="anonymous"></script>
 
-    <!-- Testimonials -->
-    <section id="testimonials"></section>
-
-    <!-- Contact -->
-    <section id="contact"></section>
-  </body>
+  <!-- CSS -->
+  <link rel="stylesheet" href="css/style.css">
+  
+  <!-- Javascript -->
+  <script src="src/main.js" defer></script>
+</head>
+<body>
+  
+</body>
 </html>
