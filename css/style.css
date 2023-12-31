@@ -13,6 +13,9 @@
     --color-blue: #03e8f9;
     --color-orange: #fd6413;
     --color-gray: #1b1e26;
+
+    /* Size */
+    --size-max-width: 1200px
 }
 
 * {
@@ -47,6 +50,29 @@ button {
 button:focus {
     outline: 1px solid var(--color-accent);
 }
+
+
+/* Common */
+.section {
+    padding: 4rem;
+    text-align: center;
+}
+
+.title {
+    font-size: 2.5rem;
+    margin: 1rem 0;
+}
+
+.description {
+    font-size: 1.5rem;
+    margin: 0.5rem 0;
+}
+
+.max-container {
+    max-width: var(--size-max-width); /* 최대로 넓어질 수 있는 너비 제한 */
+    margin: auto; /* 블록레벨의 수평정렬 할 때 */
+}
+
 
 /* Header */
 .header {
@@ -92,6 +118,7 @@ button:focus {
     border-radius: 4px;
 }
 
+
 /* Home */
 #home {
     background-color: var(--color-primary);
@@ -102,9 +129,12 @@ button:focus {
 }
 
 .home__avatar {
-    object-fit: cover; /* 이미지의 원래 비율 유지 */
+    object-fit: cover; /* 이미지의 원래 비율 유지하는 것 */
+    /*
+    width: 250px; height: 250px;
     border-radius: 100%;
-    border: 3px soild var(--color-accent);
+    border: 3px solid var(--color-accent);
+    */
 }
 
 .home__title {
@@ -136,4 +166,58 @@ button:focus {
     background-color: transparent;
     color: var(--color-text);
     outline: 2px solid var(--color-accent); /* 컨텐츠 사이즈에 영향을 주지 않으면서 테두리를 적용하는 것 != border */
+}
+
+
+/* About */
+.majors {
+    display: flex;
+    justify-content: space-between;
+    gap: 1rem;
+    margin: 2.5rem 0;
+}
+
+.major {
+    background-color: var(--color-primary-variant);
+    padding: 2rem 1rem;
+    color: var(--color-text);
+    border-radius: 1rem;
+    cursor: default;
+    box-shadow: 4px 8px 8px rgba(0, 0, 0, 0.38);
+}
+
+.major__icon {
+    font-size: 4rem;
+    margin: 1rem 0;
+    color: var(--color-accent);
+    transition: all 300ms ease;
+}
+.major:hover .major__icon {
+    transform: rotate(-15deg) scale(1.2);
+}
+
+.major__title {
+    font-size: 1.5rem;
+    font-weight: bold;
+    margin-bottom: 1rem;
+}
+
+.jobs {
+    text-align: start;
+}
+
+.job {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    margin-bottom: 1rem;
+}
+
+.job__name {
+    color: var(--color-primary);
+}
+
+.job__period {
+    color: var(--color-primary);
+    font-size: 0.8rem;
 }
