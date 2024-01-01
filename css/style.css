@@ -84,6 +84,7 @@ button:focus {
     display: flex;
     justify-content: space-between;
     align-items: center;
+    z-index: 1; /* 헤더가 가장 높은 곳으로 위치 */
 }
 
 .header__logo {
@@ -282,4 +283,262 @@ button:focus {
 .bar__value {
     height: 3px;
     background-color: var(--color-accent);
+}
+
+/* Work */
+#work {
+    background-color: var(--color-primary);
+    color: var(--color-text);
+}
+
+.categories {
+    display: flex;
+    justify-content: center;
+    margin: 2.5rem;
+    gap: 1rem;
+}
+
+.category {
+    position: relative;
+    color: var(--color-text);
+    font-size: 1.1rem;
+    padding: 0.5rem 3rem;
+    border-radius: 4px;
+    border: 1px solid var(--color-accent);
+    cursor: pointer;
+    white-space: nowrap; /* 웹 사이즈가 변경될 때, 버튼 글씨 줄바꿈 되지 않도록 */
+}
+
+.category--selected {
+    background-color: var(--color-accent);
+    color: var(--color-primary);
+}
+
+.category__count {
+    opacity: 0;
+    position: absolute; /* 해당 요소가 독립적으로 빠져나와서 부모에게 맞춰짐 => static이 아닌 것으로 가기 때문에 body로 가기 때문에 button자체에 position relative */
+    top: -20px;
+    right: 16px;
+    width: 28px;
+    height: 28px;
+    line-height: 28px;
+    border-radius: 100%;
+    background-color: var(--color-accent-variant);
+    color: var(--color-text);
+    transition: all 250ms ease-in;
+}
+
+.category--selected .category__count,
+.category:hover .category__count {
+    opacity: 1;
+    top: 0;
+}
+
+.projects {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+    gap: 1rem;
+}
+
+.project {
+    position: relative;
+    border-radius: 8px;
+    overflow: hidden;
+}
+
+.project__img {
+    width: 100%; /* 부모의 너비에 가득 채우게 */
+}
+
+.project__metadata {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: var(--color-primary);
+    opacity: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    transition: all 250ms ease-in;
+    transform: translateY(-10px);
+}
+
+.project__metadata:hover {
+    opacity: 0.8;
+    transform: translateY(0px);
+}
+
+.project__title:after {
+    content: '';
+    display: block;
+    position: relative;
+    left: 50%;
+    transform: translateX(-50%);
+    margin: 0.5rem 0;
+    width: 50px;
+    height: 2px;
+    background-color: var(--color-accent);
+}
+
+
+/* Testimonial */
+.testimonials {
+    margin: 3rem;
+}
+
+.testimonial {
+    display: flex;
+    gap: 2rem;
+    align-items: center;
+    margin-bottom: 2rem;
+}
+
+.testimonial:nth-child(even) .testimonial__img {
+    order: 1;
+}
+
+.testimonial__img {
+    width: 150px;
+    height: 150px;
+    border-radius: 100%;
+    box-shadow: 0 3px 10px rgb(0,0,0,0.2);
+}
+
+.testimonial__bubble {
+    padding: 1rem;
+    border-radius: 8px;
+    box-shadow: 0 3px 10px rgb(0,0,0,0.2);
+}
+
+.testimonial__bubble__name {
+    color: var(--color-accent);
+    font-weight: bold;
+    filter: brightness(70%);
+}
+
+
+/* Arrow up */
+.arrow-up {
+    background-color: var(--color-primary);
+    position: fixed;
+    bottom: 3rem;
+    right: 3rem;
+    font-size: 3rem;
+    width: 4.5rem;
+    height: 4.5rem;
+    border-radius: 100%;
+    text-align: center;
+    box-shadow: 5px 5px 0px 0px var(--color-accent);
+}
+
+/* Footer */
+#contact {
+    background-color: var(--color-primary);
+    color: var(--color-text);
+}
+
+.contact__links {
+    display: flex;   
+    justify-content: center;
+    gap: 1rem;
+    padding: 1rem;
+    font-size: 2rem;
+}
+
+.contact__link {
+    transition: color 250ms ease-in;
+}
+
+.contact__link:hover {
+    color: var(--color-accent);
+}
+
+
+/* screen이면서 0~768까지는 해당 css로 덮어씌우기 */
+@media screen and (max-width: 768px) {
+    .section {
+        padding: 3rem 2rem;
+    }
+
+    .title {
+        font-size: 2rem;
+    }
+
+    .description {
+        font-size: 1rem;
+    }
+
+    .header {
+        flex-direction: column;
+        align-items: start;
+    }
+
+    .header__menu {
+        flex-direction: column;
+        text-align: center;
+        padding: 1rem 4rem;
+        gap: 1rem;
+    }
+
+    .header__nav {
+        width: 100%
+    }
+
+    #home {
+        padding-bottom: 3rem;
+    }
+
+    .home__title {
+        font-size: 2.5rem;
+        margin-bottom: 0.5rem;
+    }
+
+    .majors {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .major {
+        max-width: 25rem;
+    }
+
+    .job {
+        justify-content: center;
+    }
+
+    .skills {
+        grid-template-columns: 1fr;
+    }
+
+    .categories {
+        flex-direction: column;
+    }
+
+    .category {
+        width: 100%;
+    }
+
+    .projects {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .testimonial {
+        flex-direction: column;
+    }
+
+    .testimonial:nth-child(even) .testimonial__img {
+        order: 0;
+    }
+
+    .arrow-up {
+        font-size: 2rem;
+        width: 3rem;
+        height: 3rem;
+        bottom: 1.5rem;
+        right: 1.5rem;
+    }
 }
