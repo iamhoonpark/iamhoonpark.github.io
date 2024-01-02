@@ -44,8 +44,12 @@
         - https://www.shapedivider.app/
     13. gradient background
         - https://cssgradient.io/
-    14. SVG background
+    14-1. SVG background
         - https://www.svgbackgrounds.com/
+    14-2. data를 기준으로 url생성
+        - https://css-tricks.com/probably-dont-base64-svg/
+    14-3. CSS, mask 속성
+        - https://codepen.io/noahblon/post/coloring-svgs-in-css-background-images#css-masks-1
     15. theme background-color
         - https://chrome.google.com/webstore/detail/ultimate-color-picker/lobiadjfmkomemokdfhiaaaidgdhcded
     16. typeitjs
