@@ -183,6 +183,13 @@ button:focus {
     -webkit-mask: var(--divider-home-wave); /* webkit에서도 호환이 가능하도록 */
 }
 
+.home__container {
+  position: relative;
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+
 .home__avatar {
     object-fit: cover; /* 이미지의 원래 비율 유지하는 것 */
     /*
@@ -195,7 +202,6 @@ button:focus {
 .home__title {
     font-size: 3rem;
     margin-bottom: 1rem;
-
 }
 
 .home__title--strong {
