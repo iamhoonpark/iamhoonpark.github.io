@@ -8,11 +8,20 @@
 //    - 다수의 섹션이 보여진다면, 가장 첫번째 섹션을 우선적으로 선택해서 보여줌
 //    - 하지만, 마지막 contact 섹션이 보여진다면 가장 마지막 센션을 선택
 
-const sectionIds = ['#home', '#about', '#skills', '#work', '#testimonial', '#contact'];
+const sectionIds = [
+    '#home', 
+    '#about', 
+    '#skills', 
+    '#work', 
+    '#testimonial', 
+    '#contact'
+];
 const sections = sectionIds.map(id => document.querySelector(id));
 const navItems = sectionIds.map(id => document.querySelector(`[href="${id}"]`));
+
 const visibleSections = sectionIds.map(() => false);
 let activeNavItem = navItems[0];
+
 const options = {
     rootMargin: '-20% 0px 0px 0px',
     threshold: [0, 0.98],
