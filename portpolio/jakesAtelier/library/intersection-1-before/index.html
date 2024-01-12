@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Intersection Observer</title>
+    <style>
+      .box {
+        width: 300px;
+        height: 300px;
+        margin: 80px auto;
+        font-size: 3rem;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background-color: deepskyblue;
+        transition: all 250ms;
+      }
+
+      .box.active {
+        background-color: purple;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="box">1</div>
+    <div class="box">2</div>
+    <div class="box">3</div>
+    <div class="box">4</div>
+    <div class="box">5</div>
+    <div class="box">6</div>
+    <div class="box">7</div>
+    <div class="box">8</div>
+    <div class="box">9</div>
+    <div class="box">10</div>
+    <div class="box">11</div>
+    <div class="box">12</div>
+    <div class="box">13</div>
+    <div class="box">14</div>
+    <div class="box">15</div>
+    <div class="box">16</div>
+    <div class="box">17</div>
+    <div class="box">18</div>
+    <div class="box">19</div>
+    <div class="box">20</div>
+
+    <script>
+      // 1. intersctionObserver를 사용하기 위해선 IntersectionObserver 클래스의 인스턴스(observer)를 만들고
+      // 관찰할 때마다 호출하길 원하는 콜백함수를 전달해주면 된다.
+      const observer = new IntersectionObserver(callback); 
+
+
+      // 2. 생성해둔 observer라는 인스턴스를 이용해서 내가 원하는 요소마다 호출을 하면됨
+      const boxes = document.querySelectorAll('.box');
+      boxes.forEach((box) => observer.observe(box));
+
+      // 3. callback함수
+      // 처음으로 관찰하기 시작한 순간에 모든 요소(20개)들이 호출이되었고,
+      // 그 뒤부터는 화면에서 사라지거나 진입할 때마다 콜백함수가 호출된다.
+      // 호출이 될때 전달되는 entries는 변경사항이 발생한 요소들을 배열로 전달
+      function callback(entries) {
+        entries.forEach(entry => {
+          console.log(entry);
+          console.log(entry.target);
+          console.log(entry.isIntersecting);
+          console.log(entry.intersectionRatio); // 또는 얼마만큼 진입했는지?
+          if (entry.isIntersecting) {
+            // 화면 안으로 진입했는지?
+            entry.target.classList.add('active');
+          } else {
+            // 화면 밖으로 나갔는지?
+            entry.target.classList.remove('active');
+          }
+        });
+      }
+    </script>
+  </body>
+</html>

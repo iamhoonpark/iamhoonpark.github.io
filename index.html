@@ -1,303 +1,205 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-  <!-- SEO -->
-  <title>Jake&#39;s Atelier</title>
-  <meta name="description" content="Portfolio for world-renowned software engineer Jake"/>
-  <meta name="author" content="Jake"/>
-  <link rel="shortcut icon" href="images/favicon.ico" type="image/x-icon">
+    <!-- SEO -->
+    <title>Jake Sanghoon Park | Fullstack Web Developer</title>
+    <meta name="description" content="Portfolio for world-renowned software engineer Jake"/>
+    <meta name="author" content="Jake"/>
+    <link rel="shortcut icon" href="images/favicon.ico" type="image/x-icon">
 
-  <!-- OG(Open Graph Data) -->
-  <meta property="og:title" content="Jake&#39;s Atelier"/>
-  <meta property="og:type" content="website"/>
-  <meta property="og:url" content="https://iamhoonpark.github.io/"/>
-  <meta property="og:image" content="https://iamhoonpark.github.io/images/og.png"/>
+    <!-- OG(Open Graph Data) -->
+    <meta property="og:title" content="Jake&#39;s Atelier"/>
+    <meta property="og:type" content="website"/>
+    <meta property="og:url" content="https://iamhoonpark.github.io/"/>
+    <!-- <meta property="og:image" content="https://iamhoonpark.github.io/images/og.png"/> -->
 
-  <!-- Google Fonts -->
-  <link rel="preconnect" href="https://fonts.googleapis.com"/>
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin/>
-  <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;500;600;700&display=swap" rel="stylesheet"/>
-  <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300&family=Raleway:wght@300;400;600;700;800&display=swap" rel="stylesheet">
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Source+Sans+3:wght@400;500;600;700;800&display=swap" rel="stylesheet">
 
-  <!-- Font Awesome -->
-  <script src="https://kit.fontawesome.com/9e732877fb.js" crossorigin="anonymous"></script>
+    <!-- Font Awesome -->
+    <script src="https://kit.fontawesome.com/9e732877fb.js" crossorigin="anonymous"></script>
 
-  <!-- Typeit -->
-  <script src="https://unpkg.com/typeit@8.7.1/dist/index.umd.js"></script>
+    <!-- Typeit -->
+    <script src="https://unpkg.com/typeit@8.7.1/dist/index.umd.js"></script>
 
-  <!-- CSS -->
-  <link rel="stylesheet" href="css/style.css">
-  
-  <!-- Javascript -->
-  <script type="module" src="src/main.js" defer></script>
-  <script type="module" src="src/projects.js" defer></script>
-  <script type="module" src="src/active_menu.js" defer></script>
-  <script type="module" src="src/type.js" defer></script>
+    <!-- Rellax -->
+    <script src="https://cdn.jsdelivr.net/gh/dixonandmoe/rellax@master/rellax.min.js"></script>
+
+    <!-- Email -->
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"></script>
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/email.css">
+    
+    <!-- Javascript -->
+    <script type="module" src="src/main.js" defer></script>
+    <script type="module" src="src/active_menu.js" defer></script>
+    <script type="module" src="src/email.js" defer></script>
+    <script type="module" src="src/projects.js" defer></script>
 </head>
 <body>
-  <!-- Header -->
-  <header class="header">
-    <div class="header__logo">
-      <!--<img class="header__logo__img" src="images/origin.png" alt="header logo">-->
-      <h1 class="header__logo__title"><a href="#">JAKE</a></h1>
-    </div>
-    <nav class="header__nav">
-      <ul class="header__menu">
-        <li><a class="header__menu__item active" href="#home">Home</a></li>
-        <li><a class="header__menu__item" href="#about">About</a></li>
-        <li><a class="header__menu__item" href="#skills">Skills</a></li>
-        <li><a class="header__menu__item" href="#work">My Work</a></li>
-        <li><a class="header__menu__item" href="#testimonial">Testimonial</a></li>
-        <li><a class="header__menu__item" href="#contact">Contact</a></li>
-      </ul>
-    </nav>
-    <button class="header__toggle" aria-label="navigation menu toggle">
-      <i class="fa-solid fa-bars"></i>
-    </button>
-  </header>
 
-  <!-- Main -->
-  <main>
-    <!-- Home -->
-    <section id="home">
-      <div class="home__container">
-        <img class="home__avatar" src="images/origin2.png" alt="Jake's profile"/>
-        <h2 class="home__title" aria-label="Hello, I'm Jake">
-          I&#39;m
-          <strong class="home__title--strong">amazing</strong>, Jake.
-        </h2>
-        <p class="home__description">
-          A software engineer with 2 years of experience in full stack web development.<br/>
-          Please DM me or see my clients review or previous work on the My Work tab.
-        </p>
-        <a class="home__button" href="#contact">Contact Me</a>
-      </div>
-    </section>
-    <!-- About -->
-    <section id="about" class="section max-container">
-      <h2 class="title">ABOUT</h2>
-      <p class="description"><!--Lorem, ipsum dolor sit amet consectetur adipisicing elit. Nam officiis in tempora necessitatibus, itaque numquam asperiores dolor praesentium possimus hic sapiente qui voluptatem veritatis recusandae temporibus, at ducimus magni assumenda.--></p>
-      <ul class="majors">
-        <li class="major">
-          <i class="fa-brands fa-html5 major__icon"></i>
-          <p class="major__title">Front-end</p>
-          <p>HTML, CSS, JavaScript, React, Web APIs</p>
-        </li>
-        <li class="major">
-          <i class="fa-solid fa-server major__icon"></i>
-          <p class="major__title">Back-end</p>
-          <p>HTML, CSS, JavaScript, React, Web APIs</p>
-        </li>
-        <li class="major">
-          <i class="fa-solid fa-circle-info major__icon"></i>
-          <p class="major__title">Etc</p>
-          <p>HTML, CSS, JavaScript, React, Web APIs</p>
-        </li>
-      </ul>
-      <ul class="jobs">
-        <li class="job">
-          <img src="images/jobs/poscoict.jpg" alt="google logo">
-          <div>
-            <p class="job__name">POSCO ICT as Junior Software Enginner</p>
-            <p class="job__period">2022 Apr - Dec</p>
-          </div>
-        </li>
-        <li class="job">
-          <img src="images/jobs/hanbang.jpg" alt="samsung logo">
-          <div>
-            <p class="job__name">Hanbang Mobile as Junior Software Enginner</p>
-            <p class="job__period">2023 May - Dec</p>
-          </div>
-        </li>
-      </ul>
-    </section>
-    <!-- Skills -->
-    <section id="skills" class="section">
-      <div class="max-container">
-        <h2 class="title">SKILLS</h2>
-        <p class="description">Skills & Attributes</p>
-        <p><!--Lorem, ipsum dolor sit amet consectetur adipisicing elit. Nam officiis in tempora necessitatibus, itaque numquam asperiores dolor praesentium possimus hic sapiente qui voluptatem veritatis recusandae temporibus, at ducimus magni assumenda.--></p>
-        <div class="skills">
-          <section class="skills__coding">
-            <h3 class="skills__title">Coding Skills</h3>
-            <ul>
-              <li class="bar"><div class="bar__metadata"><span>JavaScript</span><span>98%</span></div><div class="bar__bg"><div class="bar__value" style="width: 98%"></div></div></li>
-              <li class="bar"><div class="bar__metadata"><span>jQuery</span><span>88%</span></div><div class="bar__bg"><div class="bar__value" style="width: 88%"></div></div></li>
-              <li class="bar"><div class="bar__metadata"><span>React</span><span>78%</span></div><div class="bar__bg"><div class="bar__value" style="width: 78%"></div></div></li>
-              <li class="bar"><div class="bar__metadata"><span>Java</span><span>68%</span></div><div class="bar__bg"><div class="bar__value" style="width: 68%"></div></div></li>
-              <li class="bar"><div class="bar__metadata"><span>SQL</span><span>58%</span></div><div class="bar__bg"><div class="bar__value" style="width: 58%"></div></div></li>
-            </ul>
-          </section>
-          <section class="skills__tools">
-            <h3 class="skills__title">Tooling & DevOps</h3>
-            <ul>
-              <li>VS Code, intelliJ, Eclips</li>
-              <li>GitHub, bitbucket, maven, bash</li>
-              <li>AWS</li>
-              <li>MSA</li>
-            </ul>
-          </section>
-          <section class="skills__etc">
-            <h3 class="skills__title">Etc</h3>
-            <ul>
-              <li>Git</li>
-              <li>Photoshop, Illustrator, Premiere, InDesign</li>
-            </ul>
-          </section>
+    <!-- Header -->
+    <header class="header">
+        <div class="header__logo">
+          <img class="header__logo__img" src="images/logo.png" alt="header logo">
+          <h1 class="header__logo__title"><a href="#">JAKE PARK</a></h1>
         </div>
-      </div>
-    </section>
-    <!-- Work -->
-    <section id="work" class="section">
-      <div class="max-container">
-        <h2 class="title">PROJECTS</h2>
-        <p class="description"><!--Projects--></p>
-        <ul class="categories">
-          <li><button class="category category--selected" data-category="all">All <span class="category__count">8</span></button></li>
-          <li><button class="category" data-category="business">Business <span class="category__count">2</span></button></li>
-          <li><button class="category" data-category="portfolio">Portfolio <span class="category__count">2</span></button></li>
-          <li><button class="category" data-category="practice">Practice <span class="category__count">4</span></button></li>
-        </ul>
-        <ul class="projects">
-          <li class="project" data-type="practice">
-            <a href="https://github.com/iamhoonpark/essential-es6" target="_black">
-              <img src="images/projects/practice-js.jpg" alt="project1" class="project__img"/>
-              <div class="project__metadata">
-                <h3 class="project__title">JavaScript 개념 학습</h3>
-                <p>개념 파악 및 기초 문법 학습</p>
-              </div>
-            </a>
-          </li>
-          <li class="project" data-type="practice">
-            <a href="https://github.com/iamhoonpark/essential-spring-rdb" target="_black">
-              <img src="images/projects/practice-mvc.jpg" alt="project2" class="project__img"/>
-              <div class="project__metadata">
-                <h3 class="project__title">MVC · RDB 개념 복습</h3>
-                <p>복습 - 미니 프로젝트 제작</p>
-              </div>
-            </a>
-          </li>
-          <li class="project" data-type="portfolio">
-            <a href="https://github.com/iamhoonpark/project-team-feria" target="_black">
-              <img src="images/projects/portfolio-feria.jpg" alt="project3" class="project__img"/>
-              <div class="project__metadata">
-                <h3 class="project__title">여행 서비스 - 페리아</h3>
-                <p>jQuery · Spring · JSP · OracleDB</p>
-              </div>
-            </a>
-          </li>
-          <li class="project" data-type="portfolio">
-            <a href="https://github.com/iamhoonpark/project-team-supply-chain-management" target="_black">
-              <img src="images/projects/portfolio-scm.jpg" alt="project4" class="project__img"/>
-              <div class="project__metadata">
-                <h3 class="project__title">공급망 관리 서비스</h3>
-                <p>JS · Spring · MySQL</p>
-              </div>
-            </a>
-          </li>
-          <li class="project" data-type="practice">
-            <a href="https://github.com/iamhoonpark/essential-react" target="_black">
-              <img src="images/projects/practice-react.jpg" alt="project5" class="project__img"/>
-              <div class="project__metadata">
-                <h3 class="project__title">React.js 개념 학습</h3>
-                <p>개념 파악 및 기초 문법 학습</p>
-              </div>
-            </a>
-          </li>
-          <li class="project" data-type="business">
-            <a href="https://www.steel-n.com/T40/T40010/t400101820.do?event=find&P_Secu=Y" target="_black">
-              <img src="images/projects/project-posco.jpg" alt="project6" class="project__img"/>
-              <div class="project__metadata">
-                <h3 class="project__title">포스코 통합출입관리 시스템</h3>
-                <p>React · SpringBoot · JPA · MSA</p>
-              </div>
-            </a>
-          </li>
-          <li class="project" data-type="practice">
-            <a href="https://github.com/iamhoonpark/dev-tips" target="_black">
-              <img src="images/projects/practice-memo.gif" alt="project7" class="project__img"/>
-              <div class="project__metadata">
-                <h3 class="project__title">에러 솔루션</h3>
-                <p>개발하면서 마주한 에러 솔루션 메모</p>
-              </div>
-            </a>
-          </li>
-          <li class="project" data-type="business">
-            <a href="https://m.karhanbang.com/mptl/main" target="_black">
-              <img src="images/projects/poject-hanbang.jpg" alt="project8" class="project__img"/>
-              <div class="project__metadata">
-                <h3 class="project__title">모바일앱 한방 고도화</h3>
-                <p>jQuery · JSP · SpringBoot · MSA</p>
-              </div>
-            </a>
-          </li>
-        </ul>
-      </div>
-    </section>
-    <!-- Testimonials -->
-    <section id="testimonial" class="section max-container">
-      <h3 class="title">Testimonial</h3>
-      <p class="description">See what they say about me</p>
-      <ul class="testimonials">
-        <li class="testimonial">
-          <img src="images/testimonials/basic.png" alt="people1" class="testimonial__img"/>
-          <div class="testimonial__bubble">
-            <p>"When potential customers are researching you online, they're getting to know you through the content"</p>
-            <p><a href="#" class="testimonial__bubble__name">Anamika Sandula</a> Creative Manager</p>
-          </div>
-        </li>
-        <li class="testimonial">
-          <img src="images/testimonials/basic.png" alt="people2" class="testimonial__img"/>
-          <div class="testimonial__bubble">
-            <p>"To generate these glowing testimonals, you need to know who your happy, successful customers are and that's"</p>
-            <p><a href="#" class="testimonial__bubble__name">Souther Hakcax</a> Marketing Manager</p>
-          </div>
-        </li>
-        <li class="testimonial">
-          <img src="images/testimonials/basic.png" alt="people3" class="testimonial__img"/>
-          <div class="testimonial__bubble">
-            <p>"A complete search of the internet has found these results satisfactory result is the most popular phrase on the web"</p>
-            <p><a href="#" class="testimonial__bubble__name">John Allendane</a> Product Manager</p>
-          </div>
-        </li>
-      </ul>
-    </section>
-    <!-- Arrow up -->
-    <aside>
-      <a class="arrow-up" href="#home" title="back to top">
-        <i class="fa-solid fa-arrow-up"></i>
-      </a>
-    </aside>
-  </main>
-  
-  <!-- Footer -->
-  <footer id="contact" class="section">
-    <div class="max-container">
-      <h2 class="title">Let&#39;s talk</h2>
-      <p class="description">psh995666@gmail.com</p>
-      <ul class="contact__links">
-        <li>
-          <a class="contact__link" href="https://github.com/iamhoonpark/" target="_blank" title="my github link">
+        <nav class="header__nav">
+            <ul class="header__menu">
+                <li><a class="header__menu__item active" href="#home">HOME</a></li>
+                <li><a class="header__menu__item" href="#about">ABOUT</a></li>
+                <li><a class="header__menu__item" href="#projects">PROJECTS</a></li>
+                <li><a class="header__menu__item" href="#contact">CONTACT</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- Main -->
+    <main>
+        <section id="home">
+            <div class="home__container">
+                <h2 class="home__title" aria-label="Hello, I'm Jake Sanghoon Park">
+                    Hello, I&#39;m <span class="animated-text tilted">Jake Sanghoon Park</span>.
+                </h2>
+                <p class="home__description">
+                    A product-focused fullstack developer based in Seoul.<br/>
+                    I specialise in helping products grow based on user metircs.
+                </p>
+                <a class="home__button" href="#projects">VIEW MY WORK</a>
+            </div>
+        </section>
+
+        <section id="about" class="section">
+            <div class="max-container">
+                <h2 class="title">ABOUT</h2>
+                <div class="about__content">
+                    <div class="about__content__main">
+                        <h3 class="about__content__title">My Profile</h3>
+                        <img class="about__content__logo" src="images/logo.png" alt="website logo">
+                        <p>
+                            I'm a fullstack developer in Seoul, KR.<br/>
+                            I have serious passion for creating intuitive, dynamic user experiences.<br/>
+                            <strong><a href="#contact">Let's make something special</a></strong>.
+                        </p>
+                    </div>
+                    <div class="about__content__skills">
+                        <h3 class="about__content__title">My Skills</h3>
+                        <div class="skills">
+                        <div class="skills__skill">JavaScript</div>
+                        <div class="skills__skill">jQuery</div>
+                        <div class="skills__skill">React</div>
+                        <div class="skills__skill">Java</div>
+                        <div class="skills__skill">Spring Boot</div>
+                        <div class="skills__skill">Hibernate</div>
+                        <div class="skills__skill">RestAPIs</div>
+                        <div class="skills__skill">WebAPIs</div>
+                        <div class="skills__skill">JPA</div>
+                        <div class="skills__skill">JSP</div>
+                        <div class="skills__skill">PostgresQL</div>
+                        <div class="skills__skill">MS-SQL</div>
+                        <div class="skills__skill">GIT</div>
+                        <div class="skills__skill">AWS</div>
+                        <div class="skills__skill">MSA</div>
+                    </div>
+                    </div>
+                  </div>
+            </div>
+        </section>
+
+        <section id="projects" class="section">
+            <div class="max-container">
+                <h2 class="title">PROJECTS</h2>
+                <ul class="categories">
+                    <li><button class="category category--selected" data-category="all">ALL</button></li>
+                    <li><button class="category" data-category="business">PROJECT</button></li>
+                    <li><button class="category" data-category="portfolio">PORTFOLIO</button></li>
+                    <li><button class="category" data-category="practice">PRACTICE</button></li>
+                  </ul>
+                  <ul class="projects">
+                    <li class="project" data-type="portfolio">
+                      <a href="https://github.com/iamhoonpark/project-team-feria" target="_black">
+                        <img src="images/projects/portfolio-feria.jpg" alt="project3" class="project__img"/>
+                        <div class="project__metadata">
+                          <h3 class="project__title">Web Application / Travel</h3>
+                          <p>jQuery · Spring · JSP · OracleDB</p>
+                        </div>
+                      </a>
+                    </li>
+                    <li class="project" data-type="portfolio">
+                      <a href="https://github.com/iamhoonpark/project-team-supply-chain-management" target="_black">
+                        <img src="images/projects/portfolio-scm.jpg" alt="project4" class="project__img"/>
+                        <div class="project__metadata">
+                          <h3 class="project__title">Web Application / SCM</h3>
+                          <p>JS · Spring · MySQL</p>
+                        </div>
+                      </a>
+                    </li>
+                    <li class="project" data-type="business">
+                      <a href="https://www.steel-n.com/T40/T40010/t400101820.do?event=find&P_Secu=Y" target="_black">
+                        <img src="images/projects/project-posco.jpg" alt="project6" class="project__img"/>
+                        <div class="project__metadata">
+                          <h3 class="project__title">Access Management System</h3>
+                          <p>React · SpringBoot · JPA · MSA</p>
+                        </div>
+                      </a>
+                    </li>
+                    <li class="project" data-type="business">
+                      <a href="https://m.karhanbang.com/mptl/main" target="_black">
+                        <img src="images/projects/poject-hanbang.jpg" alt="project8" class="project__img"/>
+                        <div class="project__metadata">
+                          <h3 class="project__title">Mobile App Real Estate</h3>
+                          <p>jQuery · JSP · SpringBoot · MSA</p>
+                        </div>
+                      </a>
+                    </li>
+                  </ul>
+            </div>
+        </section>
+
+        <section id="contact" class="section">
+            <div class="max-container">
+                <h2 class="title">CONTACT</h2>
+                <section class="contact__container">
+                    <form id="form">
+                        <input class="contact__content" placeholder="Enter Your Name" type="text" name="from_name" id="from_name" required>
+                        <input class="contact__content" placeholder="Enter Your Email" type="text" name="from_email" id="from_email" required>
+                        <input class="contact__content__wide" placeholder="Enter Your Message" type="text" name="message" id="message" required>
+                        <input class="contact__submit" type="submit" id="button" value="SUBMIT" >
+                    </form>
+                </section>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer id="footer" class="section">
+      <div class="icon-wrap flex row">
+        <a href="https://github.com/iamhoonpark/" target="_blank" title="my github link">
+          <div class="flex icon" id="icon-2">
             <i class="fa-brands fa-github"></i>
-          </a>
-        </li>
-        <li>
-          <a class="contact__link" href="mailto:psh995666@gmail.com" title="my email link">
+          </div>
+        </a>
+        <a href="mailto:psh995666@gmail.com" title="my email link">
+          <div class="flex icon" id="icon-3">
             <i class="fa-solid fa-envelope"></i>
-          </a>
-        </li>
-        <li>
-          <a class="contact__link" href="tel:+82.10.2111.3005" title="my phone number">
+          </div>
+        </a>
+        <a href="tel:+82.10.2111.3005" title="my phone number"></a>
+          <div class="flex icon" id="icon-4">
             <i class="fa-solid fa-mobile"></i>
-          </a>
-        </li>
-      </ul>
-      <p>ⓒJake's Atelier - All rights reserved</p>
-    </div>
-  </footer>
+          </div>
+        </a>
+      </div>
+      <br/>
+      JAKE SANGHOON PARK©2024
+    </footer>
 </body>
 </html>
