@@ -16,9 +16,9 @@ document.getElementById('form')
    emailjs.sendForm(serviceID, templateID, this)
     .then(() => {
       btn.value = 'SUBMIT';
-      alert('Sent!');
+      swal('DONE!', 'Your email has been successfully sent.', 'success');
     }, (err) => {
       btn.value = 'SUBMIT';
-      alert(JSON.stringify(err));
+      swal('FAIL!', JSON.stringify(err), 'warning');
     });
 });

@@ -34,6 +34,15 @@
     <!-- Email -->
     <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"></script>
 
+    <!-- ScrollOut -->
+    <script src="https://unpkg.com/scroll-out/dist/scroll-out.min.js"></script>
+
+    <!-- Anime -->
+    <script src="lib/anime.js"></script>
+
+    <!-- Sweetalrt -->
+    <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
+
     <!-- CSS -->
     <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="css/email.css">
@@ -43,6 +52,8 @@
     <script type="module" src="src/active_menu.js" defer></script>
     <script type="module" src="src/email.js" defer></script>
     <script type="module" src="src/projects.js" defer></script>
+    <script type="module" src="src/scrollout.js" defer></script>
+    <script type="module" src="src/anime.js" defer></script>
 </head>
 <body>
 
@@ -77,7 +88,7 @@
             </div>
         </section>
 
-        <section id="about" class="section">
+        <section id="about" class="section" data-scroll>
             <div class="max-container">
                 <h2 class="title">ABOUT</h2>
                 <div class="about__content">
@@ -114,7 +125,7 @@
             </div>
         </section>
 
-        <section id="projects" class="section">
+        <section id="projects" class="section" data-scroll>
             <div class="max-container">
                 <h2 class="title">PROJECTS</h2>
                 <ul class="categories">
@@ -164,7 +175,7 @@
             </div>
         </section>
 
-        <section id="contact" class="section">
+        <section id="contact" class="section" data-scroll>
             <div class="max-container">
                 <h2 class="title">CONTACT</h2>
                 <section class="contact__container">
