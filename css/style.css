@@ -4,7 +4,7 @@
     --color-accent: var(--color-purple);
     --color-accent-variant: var(--color-green);
     --color-text: #333;
-    --color-bg: #F7F7F7;
+    --color-bg: #f8f8f8;
 
     /* Colors */
     --color-black: #111111;
@@ -12,7 +12,7 @@
     --color-purple: #6E07F3;
     --color-green: #5BE9B9;
     --color-white: #fff;
-    
+
     /* Size */
     --size-max-width: 1200px;
 }
@@ -31,7 +31,11 @@ body {
     overflow-x: hidden;
 }
 
-h1, h2, h3, p, ul {
+h1,
+h2,
+h3,
+p,
+ul {
     margin: 0;
 }
 
@@ -113,12 +117,12 @@ form {
     z-index: 1;
     transition: all 300ms ease;
     background-color: var(--color-white);
-    box-shadow: 0 0.5rem 2rem rgb(0,0,0,0.1);
+    box-shadow: 0 0.5rem 2rem rgb(0, 0, 0, 0.1);
 }
 
 .header--dark {
     background-color: var(--color-primary);
-    box-shadow: 0 3px 10px rgb(0,0,0,0.2);
+    box-shadow: 0 3px 10px rgb(0, 0, 0, 0.2);
 }
 
 .header__logo {
@@ -128,8 +132,8 @@ form {
 }
 
 .header__logo__img {
-     width: 55px;
-     height: 55px;
+    width: 55px;
+    height: 55px;
 }
 
 .header__logo__title {
@@ -170,8 +174,9 @@ form {
     padding: 5rem 1rem;
     padding-top: 7rem;
     text-align: center;
-    
-    height: 100vh; /* 섹션을 사용자 창에 꽉 채우도록 설정 */
+
+    height: 100vh;
+    /* 섹션을 사용자 창에 꽉 채우도록 설정 */
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -200,7 +205,7 @@ form {
     padding: 0.5rem 1rem;
     margin-top: 2rem;
     border-radius: 4px;
-    box-shadow: 0 5px 15px 0 rgba(0,0,0,.15);
+    box-shadow: 0 5px 15px 0 rgba(0, 0, 0, .15);
     transition: transform .3s;
 }
 
@@ -241,7 +246,7 @@ form {
     margin-bottom: 1rem;
     margin-right: 1rem;
     font-size: 1rem;
-    background: rgba(153,153,153,.2);
+    background: rgba(153, 153, 153, .2);
     border-radius: 5px;
     font-weight: 600;
     color: #666
@@ -266,7 +271,8 @@ form {
     font-weight: 600;
     padding: 0.5rem 3rem;
     cursor: pointer;
-    white-space: nowrap; /* 웹 사이즈가 변경될 때, 버튼 글씨 줄바꿈 되지 않도록 */
+    white-space: nowrap;
+    /* 웹 사이즈가 변경될 때, 버튼 글씨 줄바꿈 되지 않도록 */
 }
 
 .category--selected {
@@ -292,7 +298,8 @@ form {
 }
 
 .project__img {
-    width: 100%; /* 부모의 너비에 가득 채우게 */
+    width: 100%;
+    /* 부모의 너비에 가득 채우게 */
 }
 
 .project__metadata {
@@ -386,7 +393,7 @@ form {
     background-color: var(--color-accent-variant);
     color: #fff;
     border-radius: 5px;
-    box-shadow: 0 5px 15px 0 rgba(0,0,0,.15);
+    box-shadow: 0 5px 15px 0 rgba(0, 0, 0, .15);
 }
 
 
@@ -401,7 +408,7 @@ form {
 /* Home - 애니메이션 */
 .animated-text span {
     color: var(--color-accent);
-    display:inline-block;
+    display: inline-block;
 }
 
 .animated-text.tilted span {
@@ -410,9 +417,17 @@ form {
 
 
 @keyframes tilted {
-    0%{ transform: rotateZ(-15deg); }
-    50%{ transform: rotateZ(15deg); }
-    100%{ transform: rotateZ(-15deg); }
+    0% {
+        transform: rotateZ(-15deg);
+    }
+
+    50% {
+        transform: rotateZ(15deg);
+    }
+
+    100% {
+        transform: rotateZ(-15deg);
+    }
 }
 
 
@@ -458,7 +473,8 @@ form {
 }
 
 .pop-box.show {
-    opacity: 1; /* Final state */
+    opacity: 1;
+    /* Final state */
 }
 
 .pop-box .pop-header {
@@ -491,7 +507,7 @@ form {
 }
 
 .pop-box .pop-body {
-    padding:25px 10px 20px;
+    padding: 25px 10px 20px;
     border: 1px solid #525252;
     border-radius: 0 0 10px 10px;
     background-color: #fff;
